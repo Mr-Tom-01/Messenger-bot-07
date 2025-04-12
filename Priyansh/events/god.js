@@ -22,7 +22,7 @@ module.exports.run = async function({ api, event, Threads }) {
         case "log:thread-name": {
             const oldName = (await Threads.getData(event.threadID)).name || "Name does not exist",
                     newName = event.logMessageData.name || "Name does not exist";
-            task = "User changes group name from: '" + oldName + "' to '" + newName + "'";
+            task = "User changes group name from: '" + oldName + "' to '" + newName + "';
             await Threads.setData(event.threadID, {name: newName});
             break;
         }
