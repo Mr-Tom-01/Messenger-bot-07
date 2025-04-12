@@ -5,7 +5,7 @@ module.exports.config = {
     credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
     description: "List of group administrators",
     commandCategory: "Box Chat",
-    usages: "dsqtv",
+    usages: "groupadmin",
     cooldowns: 5,
     dependencies: []
 };
