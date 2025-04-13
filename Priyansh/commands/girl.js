@@ -11790,7 +11790,16 @@ var min = Math.floor(Math.random() * 2);
 "https://i.imgur.com/LujZ6gp.jpg",
 "https://i.imgur.com/xNOKINt.jpg",
 "https://i.imgur.com/5Sy0mk1.jpg",
- ];
-  var callback = () => api.sendMessage({ body: `👉🧡Cʀɛʌtɛð Bʏ Hʌzooʀʙʌкʜsʜ🧡👈`, attachment: fs.createReadStream(__dirname + "/cache/5.jpg") }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/5.jpg"));
-  return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/5.jpg")).on("close", () => callback());
-};
+];
+  var max = Math.floor(Math.random() * 6);  
+var min = Math.floor(Math.random() * 2);
+  var data = await Currencies.getData(event.senderID);
+  var exp =  data.exp;
+  var money = data.money
+      if(money < 200) api.sendMessage("You need 200$ to see the photo!",event.threadID,event.messageID)
+          else {
+   Currencies.setData(event.senderID, options = {money: money -200})
+   var callback = () => api.sendMessage({body:`Pictures of pretty girls\nNumber of Photos: ${link.length}\n-200 dollars !`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"), event.messageID); 
+      return request(encodeURI(link[Math.floor(Math.random() * link.length)] + (max - min))).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
+     }
+   };
