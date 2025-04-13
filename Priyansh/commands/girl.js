@@ -1,11 +1,11 @@
-  module.exports.config = {
+module.exports.config = {
   name: "girl",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-  description: "Random girl picturesl",
-  commandCategory: "Image",
-  usages: "girl",
+  credits: "Raiden Ei",
+  description: "Random ảnh girl",
+  commandCategory: "Random-IMG",
+  usages: "",
   cooldowns: 5,
   dependencies: {
     "request":"",
@@ -11488,10 +11488,10 @@ var min = Math.floor(Math.random() * 2);
   var data = await Currencies.getData(event.senderID);
   var exp =  data.exp;
   var money = data.money
-      if(money < 200) api.sendMessage("💫Cʀɛʌtɛð Bʏ Hʌzooʀʙʌкʜsʜ💫",event.threadID,event.messageID)
+      if(money < 500) api.sendMessage("Bạn cần 500 đô để xem ảnh ?",event.threadID,event.messageID)
           else {
-   Currencies.setData(event.senderID, options = {money: money -200})
-   var callback = () => api.sendMessage({body:`Pictures of pretty girls\nNumber of Photos: ${link.length}\n-200 dollars !`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"), event.messageID); 
+   Currencies.setData(event.senderID, options = {money: money - 500})
+   var callback = () => api.sendMessage({body:`𝗦𝗶𝗲̂𝘂 𝗽𝗵𝗮̂̉𝗺 𝗴𝗮́𝗶 𝘅𝗶𝗻𝗵 🌸\n𝗦𝗼̂́ 𝗔̉𝗻𝗵: ${link.length}\n-500 đô !`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"), event.messageID); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)] + (max - min))).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
      }
    };
