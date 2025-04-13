@@ -5,7 +5,7 @@ module.exports.config = {
     credits: "𝙈𝙧𝙏𝙤𝙢𝙓𝙭𝙓",
     description: "War In Chatbox",
     commandCategory: "wargroup",
-    usages: "[fytv2]",
+    usages: "[fyt2]",
     cooldowns: 7,
     dependencies: {
         "fs-extra": "",
