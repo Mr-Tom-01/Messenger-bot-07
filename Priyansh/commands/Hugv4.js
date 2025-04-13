@@ -2,7 +2,7 @@
 const fs = require("fs")
 const axios = require("axios")
 module.exports.config = {
-  name: "hug",
+  name: "hugv4",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "Shahbaz ahmad choudhary",
