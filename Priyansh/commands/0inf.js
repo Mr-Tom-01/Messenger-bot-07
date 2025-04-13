@@ -23,7 +23,7 @@ const time = process.uptime(),
 		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【HH:mm:ss】");
-var link = ["https://i.imgur.com/afSpOv6.gif", "https://i.imgur.com/afSpOv6.gif", "https://i.imgur.com/afSpOv6.gif", "https://i.imgur.com/afSpOv6.gif", "https://i.imgur.com/fHgoeUS.gif", "https://i.imgur.com/xLS68nV.gif", "https://i.imgur.com/afSpOv6.gif", "https://i.imgur.com/afSpOv6.gif"];
+var link = ["https://i.imgur.com/JTBpjXZ.jpeg"];
 var callback = () => api.sendMessage({body:`✦𝗔𝗗𝗠𝗜𝗠 𝗔𝗡𝗗 𝗕𝗢𝗧 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡✦
 
 ⁂BoT NaMe ⊂◉‿◉: ${global.config.BOTNAME}
